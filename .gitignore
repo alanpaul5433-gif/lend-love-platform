@@ -41,6 +41,9 @@ Thumbs.db
 *.swp
 *.swo
 
+# Claude Code session-local config (per-user permissions)
+.claude/settings.local.json
+
 # Native
 ios/
 android/
