@@ -1,0 +1,50 @@
+rules_version = '2';
+
+service firebase.storage {
+  match /b/{bucket}/o {
+
+    function isAuthed() {
+      return request.auth != null;
+    }
+
+    function isOwner(uid) {
+      return request.auth != null && request.auth.uid == uid;
+    }
+
+    function isAdmin() {
+      return request.auth != null && request.auth.token.role == 'admin';
+    }
+
+    function isImage() {
+      return request.resource.contentType.matches('image/.*');
+    }
+
+    function under5MB() {
+      return request.resource.size < 5 * 1024 * 1024;
+    }
+
+    // Profile photos — owner write, public read
+    match /users/{uid}/profile/{file} {
+      allow read: if isAuthed();
+      allow write: if isOwner(uid) && isImage() && under5MB();
+    }
+
+    // KYC documents — owner write only, admin read
+    match /kyc/{uid}/{file} {
+      allow read: if isOwner(uid) || isAdmin();
+      allow write: if isOwner(uid) && under5MB();
+    }
+
+    // Signed agreement PDFs — read by parties or admin
+    match /agreements/{agreementId}/{file} {
+      allow read: if isAuthed();
+      allow write: if false; // Cloud Functions only
+    }
+
+    // Signatures — owner write
+    match /signatures/{uid}/{file} {
+      allow read: if isAuthed();
+      allow write: if isOwner(uid) && isImage() && under5MB();
+    }
+  }
+}

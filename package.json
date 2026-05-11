@@ -1,0 +1,28 @@
+{
+  "name": "lend-love",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Lend Love™ — Peer-to-Peer Lending Platform",
+  "workspaces": [
+    "shared",
+    "user-app",
+    "admin-panel",
+    "backend/functions"
+  ],
+  "scripts": {
+    "emulators": "firebase emulators:start",
+    "deploy:rules": "firebase deploy --only firestore:rules,storage",
+    "deploy:functions": "firebase deploy --only functions",
+    "seed": "cd backend/functions && npm run seed",
+    "mobile": "cd user-app && npm run start",
+    "admin": "cd admin-panel && npm run dev",
+    "typecheck": "npm run typecheck --workspaces --if-present",
+    "lint": "npm run lint --workspaces --if-present"
+  },
+  "devDependencies": {
+    "typescript": "^5.5.0"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

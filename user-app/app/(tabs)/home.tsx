@@ -1,0 +1,226 @@
+import React from 'react';
+import { View, Text, StyleSheet, ScrollView, Pressable } from 'react-native';
+import { SafeAreaView } from 'react-native-safe-area-context';
+import { useRouter } from 'expo-router';
+import { useAuthStore } from '../../src/store/auth';
+import { useTheme, spacing, radius, typography } from '../../src/theme/ThemeProvider';
+import { HeartLogo } from '../../src/components/HeartLogo';
+import { LoanCard } from '../../src/components/LoanCard';
+import { useMyLending, useMyBorrowing } from '../../src/hooks/useMarketplace';
+
+export default function Home() {
+  const { profile, uid } = useAuthStore();
+  const { theme } = useTheme();
+  const router = useRouter();
+  const lending = useMyLending(uid);
+  const borrowing = useMyBorrowing(uid);
+
+  const activeLoans = [
+    ...(lending.data ?? []),
+    ...(borrowing.data ?? []),
+  ]
+    .filter((l) => l.status === 'active' || l.status === 'published')
+    .slice(0, 3);
+
+  return (
+    <SafeAreaView style={[{ flex: 1, backgroundColor: theme.bgBase }]} edges={['top']}>
+      <ScrollView contentContainerStyle={styles.scroll}>
+        <View style={styles.header}>
+          <View style={styles.logoRow}>
+            <HeartLogo size={28} />
+            <Text style={[styles.brand, { color: theme.textPrimary }]}>Lend Love™</Text>
+          </View>
+          <Text style={[styles.bell, { color: theme.textSecondary }]}>🔔</Text>
+        </View>
+
+        <Text style={[styles.welcome, { color: theme.textSecondary }]}>Welcome back,</Text>
+        <Text style={[styles.name, { color: theme.textPrimary }]}>
+          {profile?.fullName ?? 'User'}
+        </Text>
+
+        <View style={styles.statsRow}>
+          <StatCard
+            icon="✓"
+            value={profile?.completedLoans ?? 0}
+            label="Completed"
+            tint={theme.successTint}
+            color={theme.primary}
+          />
+          <StatCard
+            icon="★"
+            value={profile?.rating ? profile.rating.toFixed(1) : '–'}
+            label="Rating"
+            tint={theme.warningTint}
+            color={theme.secondary}
+          />
+          <StatCard
+            icon="⚠"
+            value={profile?.overdueLoans ?? 0}
+            label="Overdue"
+            tint={theme.dangerTint}
+            color={theme.danger}
+          />
+        </View>
+
+        <Text style={[styles.section, { color: theme.textPrimary }]}>Quick Actions</Text>
+        <View style={styles.quickRow}>
+          <ActionCard
+            label="Create Loan"
+            icon="⊕"
+            tint={theme.successTint}
+            color={theme.primary}
+            onPress={() => router.push('/create-loan' as never)}
+          />
+          <ActionCard
+            label="Request Loan"
+            icon="📄"
+            tint={theme.warningTint}
+            color={theme.secondary}
+            onPress={() => router.push('/request-loan' as never)}
+          />
+        </View>
+
+        <View style={styles.sectionHeader}>
+          <Text style={[styles.section, { color: theme.textPrimary }]}>Active Loans</Text>
+          <Pressable onPress={() => router.push('/(tabs)/my-loans')}>
+            <Text style={[styles.viewAll, { color: theme.primary }]}>View All</Text>
+          </Pressable>
+        </View>
+
+        {activeLoans.length === 0 ? (
+          <View
+            style={[
+              styles.placeholder,
+              { backgroundColor: theme.bgSurface, borderColor: theme.border },
+            ]}
+          >
+            <Text
+              style={[
+                typography.body,
+                { color: theme.textSecondary, textAlign: 'center' },
+              ]}
+            >
+              No active loans yet. Create or request one to get started.
+            </Text>
+          </View>
+        ) : (
+          <View style={{ gap: spacing.md }}>
+            {activeLoans.map((loan) => (
+              <LoanCard
+                key={loan.id}
+                loan={loan}
+                onPress={() =>
+                  router.push({ pathname: '/loan/[id]', params: { id: loan.id } } as never)
+                }
+              />
+            ))}
+          </View>
+        )}
+      </ScrollView>
+    </SafeAreaView>
+  );
+}
+
+function StatCard({
+  icon,
+  value,
+  label,
+  tint,
+  color,
+}: {
+  icon: string;
+  value: string | number;
+  label: string;
+  tint: string;
+  color: string;
+}) {
+  const { theme } = useTheme();
+  return (
+    <View style={[styles.stat, { backgroundColor: tint, borderColor: color }]}>
+      <Text style={[styles.statIcon, { color }]}>{icon}</Text>
+      <Text style={[styles.statValue, { color }]}>{value}</Text>
+      <Text style={[styles.statLabel, { color: theme.textSecondary }]}>{label}</Text>
+    </View>
+  );
+}
+
+function ActionCard({
+  label,
+  icon,
+  tint,
+  color,
+  onPress,
+}: {
+  label: string;
+  icon: string;
+  tint: string;
+  color: string;
+  onPress: () => void;
+}) {
+  return (
+    <Pressable
+      onPress={onPress}
+      style={({ pressed }) => [
+        styles.action,
+        { backgroundColor: tint, borderColor: color, opacity: pressed ? 0.85 : 1 },
+      ]}
+    >
+      <Text style={[styles.actionIcon, { color }]}>{icon}</Text>
+      <Text style={[styles.actionLabel, { color }]}>{label}</Text>
+    </Pressable>
+  );
+}
+
+const styles = StyleSheet.create({
+  scroll: { padding: spacing.xl, paddingBottom: spacing.xxxl },
+  header: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    marginBottom: spacing.xl,
+  },
+  logoRow: { flexDirection: 'row', alignItems: 'center', gap: spacing.sm },
+  brand: { ...typography.h3 },
+  bell: { fontSize: 18 },
+  welcome: { ...typography.body },
+  name: { ...typography.display, marginBottom: spacing.xl },
+  statsRow: { flexDirection: 'row', gap: spacing.md, marginBottom: spacing.xl },
+  stat: {
+    flex: 1,
+    borderWidth: 1,
+    borderRadius: radius.lg,
+    padding: spacing.md,
+    alignItems: 'center',
+    gap: 4,
+  },
+  statIcon: { fontSize: 22 },
+  statValue: { ...typography.numeric },
+  statLabel: { ...typography.label },
+  section: { ...typography.h3 },
+  sectionHeader: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    marginVertical: spacing.lg,
+  },
+  viewAll: { ...typography.bodyBold },
+  quickRow: { flexDirection: 'row', gap: spacing.md, marginBottom: spacing.lg },
+  action: {
+    flex: 1,
+    borderWidth: 1,
+    borderRadius: radius.lg,
+    padding: spacing.lg,
+    alignItems: 'center',
+    gap: spacing.sm,
+    minHeight: 110,
+    justifyContent: 'center',
+  },
+  actionIcon: { fontSize: 28 },
+  actionLabel: { ...typography.bodyBold },
+  placeholder: {
+    borderRadius: radius.lg,
+    borderWidth: 1,
+    padding: spacing.xl,
+    alignItems: 'center',
+  },
+});
