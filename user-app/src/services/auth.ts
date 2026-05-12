@@ -1,22 +1,23 @@
 /**
  * Authentication service.
  *
- * In DEMO_MODE we sign users in anonymously and write a demo profile.
- * Real flow uses email/password + custom claims for KYC + admin roles.
+ * Demo accounts use email/password with deterministic credentials so the
+ * Firebase Spark plan works without enabling Anonymous Auth.
+ *
+ * Real users sign up with their own email/password. Custom claims (admin
+ * roles) are added once Cloud Functions are deployed on Blaze.
  */
 import {
-  signInAnonymously,
   signInWithEmailAndPassword,
   createUserWithEmailAndPassword,
   signOut as fbSignOut,
   onAuthStateChanged,
   type User as FbUser,
 } from 'firebase/auth';
-import { doc, getDoc, setDoc, serverTimestamp } from 'firebase/firestore';
+import { doc, getDoc, setDoc } from 'firebase/firestore';
 import { auth, db } from './firebase';
-import { DEMO_MODE } from '../config/env';
-import { DEMO } from '@lendlove/shared';
-import type { User } from '@lendlove/shared';
+import { DEMO } from '../../src/shared';
+import type { User } from '../../src/shared';
 
 export async function signInAsGuestLoaner(): Promise<User> {
   return signInAsGuest('loaner');
@@ -26,13 +27,32 @@ export async function signInAsGuestBorrower(): Promise<User> {
   return signInAsGuest('borrower');
 }
 
+/**
+ * Sign in as a demo user. Uses fixed credentials per role; creates the
+ * account on first run, signs in on subsequent runs.
+ */
 async function signInAsGuest(role: 'loaner' | 'borrower'): Promise<User> {
-  const cred = await signInAnonymously(auth);
   const isLoaner = role === 'loaner';
+  const email = isLoaner ? DEMO.LOANER_EMAIL : DEMO.BORROWER_EMAIL;
+  const password = DEMO.PASSWORD;
+
+  let fbUser: FbUser;
+  try {
+    const cred = await signInWithEmailAndPassword(auth, email, password);
+    fbUser = cred.user;
+  } catch (err: unknown) {
+    const code = (err as { code?: string })?.code ?? '';
+    if (code === 'auth/user-not-found' || code === 'auth/invalid-credential') {
+      const cred = await createUserWithEmailAndPassword(auth, email, password);
+      fbUser = cred.user;
+    } else {
+      throw err;
+    }
+  }
 
   const profile: User = {
-    uid: cred.user.uid,
-    email: isLoaner ? DEMO.LOANER_EMAIL : DEMO.BORROWER_EMAIL,
+    uid: fbUser.uid,
+    email,
     fullName: isLoaner ? 'Guest Loaner' : 'Guest Borrower',
     phone: isLoaner ? '+1 555-7777' : '+1 555-8888',
     address: isLoaner ? 'Demo Street 10, Sample City' : 'Demo Avenue 22, Sample City',
@@ -55,17 +75,12 @@ async function signInAsGuest(role: 'loaner' | 'borrower'): Promise<User> {
     updatedAt: Date.now(),
   };
 
-  await setDoc(doc(db, 'users', cred.user.uid), profile, { merge: true });
+  await setDoc(doc(db, 'users', fbUser.uid), profile, { merge: true });
   return profile;
 }
 
 export async function signIn(email: string, password: string): Promise<FbUser> {
-  if (DEMO_MODE) {
-    // In demo mode any login becomes a guest loaner.
-    await signInAsGuestLoaner();
-  } else {
-    await signInWithEmailAndPassword(auth, email, password);
-  }
+  await signInWithEmailAndPassword(auth, email, password);
   if (!auth.currentUser) throw new Error('Sign-in failed');
   return auth.currentUser;
 }

@@ -79,10 +79,15 @@ service cloud.firestore {
     }
 
     // ====== Transactions ======
+    // Demo mode: users may create their own transaction records (demo-only,
+    // no real money movement). Production: Cloud Function only — replace
+    // create with `if false` once payments service is wired up.
     match /transactions/{txId} {
       allow read: if isAuthed()
                   && (resource.data.userId == request.auth.uid || isAdmin());
-      allow write: if false; // Cloud Functions only
+      allow create: if isAuthed()
+                    && request.resource.data.userId == request.auth.uid;
+      allow update, delete: if false;
     }
 
     // ====== Conversations + Messages ======
