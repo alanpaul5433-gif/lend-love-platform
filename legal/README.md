@@ -8,6 +8,7 @@ This folder contains template legal documents for the Lend Love™ platform.
 |---|---|---|
 | `privacy-policy.md` | Privacy Policy | `lendlovellc.com/privacy` |
 | `terms-of-service.md` | Terms of Service | `lendlovellc.com/terms` |
+| `account-deletion.md` | Account Deletion instructions | `lendlovellc.com/delete-account` |
 
 ---
 

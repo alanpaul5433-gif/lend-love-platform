@@ -645,26 +645,137 @@ function buildTermsOfService() {
   });
 }
 
+// ===================== ACCOUNT DELETION =====================
+
+function buildAccountDeletion() {
+  const content = [
+    ...coverParagraphs('Account Deletion', `Document Version 1.0  •  Generated ${new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}`),
+
+    H1('How to Delete Your Lend Love™ Account'),
+    P('**Effective Date:** [DATE TO BE INSERTED]'),
+    P('**Last Updated:** [DATE TO BE INSERTED]'),
+    HR(),
+
+    H2('Overview'),
+    P('Lend Love makes it easy to delete your account and your personal data whenever you choose. This page explains how to delete your account, what data is removed, what we are required to keep by law, and how long the process takes.'),
+    P('You can delete your account in two ways:'),
+    Bullet('**From inside the mobile app** (fastest)'),
+    Bullet('**From this web page** (if you no longer have the app installed)'),
+
+    H2('Option 1 — Delete From the Mobile App'),
+    P('This is the fastest way. Your account is deleted immediately and you are signed out.'),
+    H3('Steps'),
+    Bullet('Open the Lend Love app on your phone.'),
+    Bullet('Sign in to the account you want to delete.'),
+    Bullet('Tap the **Profile** tab at the bottom right.'),
+    Bullet('Tap the **gear icon** in the top right to open **Account Settings**.'),
+    Bullet('Scroll to the bottom and tap **⚠ Delete Account**.'),
+    Bullet('Review the disclosure of what gets deleted and what is retained.'),
+    Bullet('Type the word **DELETE** in the confirmation field.'),
+    Bullet('Tap **Delete my account permanently**.'),
+    Bullet('Confirm the second prompt.'),
+    P('That\'s it. Your account, personal data, and signed-in sessions on every device are removed within seconds.'),
+
+    H2('Option 2 — Delete From This Web Page'),
+    P('Use this option if you no longer have the app, can no longer sign in, or simply prefer to handle the request by email.'),
+    H3('Steps'),
+    Bullet('Send an email from the email address on your Lend Love account to **support@lendlovellc.com**'),
+    Bullet('Use the subject line: **Account Deletion Request**'),
+    Bullet('In the body, include your full name on the account, the email address linked to your Lend Love account, and (optionally) the reason you are leaving.'),
+    Bullet('Send the email. We will reply within **3 business days** to confirm the request.'),
+    Bullet('We will verify your identity (we may ask a question only the account owner could answer) and then delete the account. You will receive a confirmation email when deletion is complete.'),
+    P('We will complete every web-based deletion request within **30 days** of receiving it, as required by law.'),
+
+    H2('What Gets Deleted'),
+    P('When you delete your account, we permanently remove:'),
+    Bullet('Your **profile information** — name, email, phone number, home address, date of birth, occupation'),
+    Bullet('Your **identity-verification (KYC) documents** — government ID, selfie, proof of address'),
+    Bullet('Your **profile photo** and any signatures you uploaded'),
+    Bullet('Any **saved payment methods** (tokens revoked with our payment processor)'),
+    Bullet('Your **push notification tokens** (you will not receive further notifications)'),
+    Bullet('Your **chat message contents**'),
+    Bullet('Any **support tickets** older than the active resolution period'),
+    Bullet('All **active sessions** on every device'),
+
+    H2('What Is Retained (and Why)'),
+    P('By law we are required to keep certain records even after you delete your account. These records are **anonymized** — your name is replaced with "Deleted User" and personally identifying details are removed.'),
+    Bullet('**Loan records** — US lending recordkeeping law requires retention for **7 years** after the loan is closed.'),
+    Bullet('**Signed loan agreements** — Required for legal audit, with your name redacted, for **7 years**.'),
+    Bullet('**Transaction history** — Tax and regulatory reporting (IRS, FinCEN) requires **7 years**.'),
+    Bullet('**KYC documents** — Anti-Money-Laundering / Bank Secrecy Act requires **5 years** after account closure.'),
+    Bullet('**Audit log of administrative actions** — Regulatory compliance, **7 years**.'),
+    P('These records cannot be retrieved or used to identify you personally. Once the retention period expires, they are also securely destroyed.'),
+
+    H2('How Long Does Deletion Take?'),
+    Bullet('**In-app deletion** — Immediate, within seconds of confirming.'),
+    Bullet('**Email request** — Up to 30 days (usually within 3 business days).'),
+    P('If you do not receive a confirmation email within 30 days of submitting a web request, please contact us at **support@lendlovellc.com** and we will investigate.'),
+
+    H2('Outstanding Loans'),
+    P('If you have an **active loan** (either as the lender or as the borrower) on the platform when you request deletion:'),
+    Bullet('Your **profile and personal information** are anonymized as described above.'),
+    Bullet('The **loan itself remains active**. You and the other party are still legally bound by the signed agreement. Lend Love is not a party to the loan and does not assume your obligations.'),
+    Bullet('We will continue to provide the other party with the information they need to honor or enforce the agreement.'),
+    P('We strongly recommend you close out any active loans before requesting deletion. If you cannot, please disclose the loan in your email and we will coordinate with you and the other party as appropriate.'),
+
+    H2('After Deletion'),
+    Bullet('Your email address will **not** be reusable on Lend Love for **30 days** after deletion — this protects against accidental sign-ups during the wind-down period.'),
+    Bullet('You may create a new account after that 30-day window with the same email, but the new account will be entirely separate and will not retain any history from the deleted one.'),
+    Bullet('Marketing or transactional emails will stop within 24 hours of deletion.'),
+
+    H2('Need Help?'),
+    P('If you have any questions about account deletion or are having trouble completing either method, please contact us:'),
+    P('📧 **Support:** support@lendlovellc.com'),
+    P('🌐 **Web:** https://lendlovellc.com'),
+    P('We typically respond within **one business day**.'),
+
+    H2('Related Documents'),
+    Bullet('**Privacy Policy** — full details on what data we collect and how we use it: https://lendlovellc.com/privacy'),
+    Bullet('**Terms of Service** — your agreement with Lend Love: https://lendlovellc.com/terms'),
+
+    HR(),
+    P('© [YEAR] Lend Love, Inc. All rights reserved. Lend Love™ is a trademark of Lend Love, Inc.'),
+  ];
+
+  return new Document({
+    ...COMMON_DOC,
+    sections: [
+      {
+        properties: pageProps(),
+        ...pageHeaderFooter('Account Deletion'),
+        children: content,
+      },
+    ],
+  });
+}
+
 // ===================== Build =====================
 
 (async () => {
   const outDir = path.join(__dirname, 'legal');
 
-  const privacy = buildPrivacyPolicy();
-  const privacyBuffer = await Packer.toBuffer(privacy);
-  const privacyPath = path.join(outDir, 'Lend-Love-Privacy-Policy.docx');
-  fs.writeFileSync(privacyPath, privacyBuffer);
+  const docs = [
+    { build: buildPrivacyPolicy, file: 'Lend-Love-Privacy-Policy.docx' },
+    { build: buildTermsOfService, file: 'Lend-Love-Terms-of-Service.docx' },
+    { build: buildAccountDeletion, file: 'Lend-Love-Account-Deletion.docx' },
+  ];
 
-  const terms = buildTermsOfService();
-  const termsBuffer = await Packer.toBuffer(terms);
-  const termsPath = path.join(outDir, 'Lend-Love-Terms-of-Service.docx');
-  fs.writeFileSync(termsPath, termsBuffer);
-
-  console.log('Generated:');
-  [privacyPath, termsPath].forEach((p) => {
-    const s = fs.statSync(p);
-    console.log(`  ${path.basename(p)}  ${(s.size / 1024).toFixed(1)} KB`);
-  });
+  console.log('Generating:');
+  for (const d of docs) {
+    const p = path.join(outDir, d.file);
+    try {
+      const buf = await Packer.toBuffer(d.build());
+      fs.writeFileSync(p, buf);
+      const s = fs.statSync(p);
+      console.log(`  OK   ${d.file}  (${(s.size / 1024).toFixed(1)} KB)`);
+    } catch (e) {
+      if (e.code === 'EBUSY') {
+        console.log(`  SKIP ${d.file}  (file is open in another application — close it and re-run)`);
+      } else {
+        throw e;
+      }
+    }
+  }
 })().catch((e) => {
   console.error(e);
   process.exit(1);

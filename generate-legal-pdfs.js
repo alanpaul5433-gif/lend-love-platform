@@ -18,6 +18,11 @@ const documents = [
     pdf: 'legal/Terms-of-Service.pdf',
     title: 'Terms of Service',
   },
+  {
+    md: 'legal/account-deletion.md',
+    pdf: 'legal/Account-Deletion.pdf',
+    title: 'Account Deletion',
+  },
 ];
 
 const css = `
