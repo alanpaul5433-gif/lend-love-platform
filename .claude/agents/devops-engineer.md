@@ -55,9 +55,9 @@ You are a senior DevOps engineer for **Lend Love™**, responsible for build pip
 | Env | Firebase Project | Bundle ID | Domain |
 |---|---|---|---|
 | **Local** | emulators + `lendlove-dev` | `com.lendlove.dev` | localhost |
-| **Dev** | `lendlove-dev` | `com.lendlove.dev` | dev.admin.lendlove.com |
-| **Staging** | `lendlove-staging` | `com.lendlove.staging` | staging.admin.lendlove.com |
-| **Production** | `lendlove-prod` | `com.lendlove` | admin.lendlove.com |
+| **Dev** | `lendlove-dev` | `com.lendlove.dev` | dev.admin.lendlovellc.com |
+| **Staging** | `lendlove-staging` | `com.lendlove.staging` | staging.admin.lendlovellc.com |
+| **Production** | `lendlove-prod` | `com.lendlove` | admin.lendlovellc.com |
 
 ## CI/CD Pipeline Design
 
@@ -190,15 +190,15 @@ P2P lending apps are heavily scrutinized. Our goal is approval on the FIRST subm
 
 | URL | Status Check |
 |---|---|
-| `lendlove.com/privacy` | Privacy Policy hosted, mobile-friendly |
-| `lendlove.com/terms` | Terms of Service hosted |
-| `lendlove.com/delete-account` | Web-based deletion path (Google requires) |
-| `lendlove.com/support` | Contact form |
-| `lendlove.com/lending-disclosures` | TILA + state-specific APR disclosures |
+| `lendlovellc.com/privacy` | Privacy Policy hosted, mobile-friendly |
+| `lendlovellc.com/terms` | Terms of Service hosted |
+| `lendlovellc.com/delete-account` | Web-based deletion path (Google requires) |
+| `lendlovellc.com/support` | Contact form |
+| `lendlovellc.com/lending-disclosures` | TILA + state-specific APR disclosures |
 
 ### Apple App Store Connect — Submission Checklist
 
-- [ ] **Demo account credentials** in submission notes: `applereviewer@lendlove.com` + password
+- [ ] **Demo account credentials** in submission notes: `applereviewer@lendlovellc.com` + password
 - [ ] Demo notes: "Use Continue as Guest Loaner/Borrower from welcome screen for full demo without KYC"
 - [ ] **Privacy Policy URL** entered
 - [ ] **Privacy Nutrition Labels** complete + accurate (matches reality)
@@ -222,7 +222,7 @@ P2P lending apps are heavily scrutinized. Our goal is approval on the FIRST subm
   - Representative example with full cost
   - Lender legal name + address
   - Privacy practices link
-- [ ] **Account deletion URL**: `lendlove.com/delete-account`
+- [ ] **Account deletion URL**: `lendlovellc.com/delete-account`
 - [ ] **Privacy Policy URL** entered
 - [ ] **Content rating** questionnaire complete
 - [ ] **Target SDK**: API 34+ (Android 14)
@@ -260,8 +260,8 @@ P2P lending apps are heavily scrutinized. Our goal is approval on the FIRST subm
 ## Web Deployment (Admin Panel)
 
 ### Vercel Configuration
-- Production: `admin.lendlove.com` → `main` branch + git tag
-- Staging: `staging.admin.lendlove.com` → `main` branch
+- Production: `admin.lendlovellc.com` → `main` branch + git tag
+- Staging: `staging.admin.lendlovellc.com` → `main` branch
 - Previews: PR-specific URLs (auto)
 - Environment variables managed in Vercel dashboard, mirrored to GitHub secrets for CI
 

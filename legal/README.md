@@ -6,8 +6,8 @@ This folder contains template legal documents for the Lend Love™ platform.
 
 | File | Purpose | Required URL |
 |---|---|---|
-| `privacy-policy.md` | Privacy Policy | `lendlove.com/privacy` |
-| `terms-of-service.md` | Terms of Service | `lendlove.com/terms` |
+| `privacy-policy.md` | Privacy Policy | `lendlovellc.com/privacy` |
+| `terms-of-service.md` | Terms of Service | `lendlovellc.com/terms` |
 
 ---
 
@@ -63,7 +63,7 @@ Both documents contain placeholders in `[BRACKETS]` that must be replaced:
 1. Have attorney review and customize the templates
 2. Fill in placeholders with real values
 3. Convert to HTML for the landing page (Markdown renders cleanly via tools like `markdown-it`, `marked`, or static site generators)
-4. Host at `lendlove.com/privacy` and `lendlove.com/terms`
+4. Host at `lendlovellc.com/privacy` and `lendlovellc.com/terms`
 5. Ensure both URLs are publicly accessible (no login wall, no geo-block)
 6. Update the URLs in `shared/src/constants.ts` if they differ
 7. Test the in-app `Help & Support` screen — the links should open correctly

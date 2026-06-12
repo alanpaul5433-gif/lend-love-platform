@@ -12,7 +12,7 @@ Lend Love, Inc. ("**Lend Love**," "**we**," "**us**," or "**our**") operates the
 
 By using the Service, you agree to the practices described in this Privacy Policy. If you do not agree, please do not use the Service.
 
-This Privacy Policy is incorporated by reference into our [Terms of Service](https://lendlove.com/terms).
+This Privacy Policy is incorporated by reference into our [Terms of Service](https://lendlovellc.com/terms).
 
 ---
 
@@ -187,7 +187,7 @@ Depending on where you live, you may have the following rights:
 ### 10.1 All Users
 - **Access**: request a copy of the personal information we hold about you
 - **Correction**: update inaccurate or incomplete information directly in your account settings
-- **Deletion**: delete your account from within the app (Profile → Account Settings → Delete Account) or via the web at [lendlove.com/delete-account](https://lendlove.com/delete-account)
+- **Deletion**: delete your account from within the app (Profile → Account Settings → Delete Account) or via the web at [lendlovellc.com/delete-account](https://lendlovellc.com/delete-account)
 - **Withdraw consent**: where processing is based on consent, you may withdraw it at any time
 
 ### 10.2 European Economic Area / UK Residents (GDPR)
@@ -205,7 +205,7 @@ You have the right to:
 - Limit the use of sensitive personal information
 - Non-discrimination for exercising your rights
 
-To exercise any of these rights, contact us at [privacy@lendlove.com](mailto:privacy@lendlove.com). We may need to verify your identity before fulfilling certain requests.
+To exercise any of these rights, contact us at [privacy@lendlovellc.com](mailto:privacy@lendlovellc.com). We may need to verify your identity before fulfilling certain requests.
 
 ### 10.4 Account Deletion — What Gets Deleted vs. Retained
 
@@ -230,7 +230,7 @@ This balance allows us to honor your right to deletion while complying with mand
 
 ## 11. Children's Privacy
 
-The Service is **not** intended for individuals under the age of 18. We do not knowingly collect personal information from anyone under 18. If you believe we have collected information from someone under 18, please contact us at [privacy@lendlove.com](mailto:privacy@lendlove.com) and we will delete it promptly.
+The Service is **not** intended for individuals under the age of 18. We do not knowingly collect personal information from anyone under 18. If you believe we have collected information from someone under 18, please contact us at [privacy@lendlovellc.com](mailto:privacy@lendlovellc.com) and we will delete it promptly.
 
 ---
 
@@ -267,9 +267,9 @@ If you have questions about this Privacy Policy or our data practices, please co
 [CITY, STATE, ZIP CODE]
 [COUNTRY]
 
-📧 **Privacy:** [privacy@lendlove.com](mailto:privacy@lendlove.com)
-📧 **General Support:** [support@lendlove.com](mailto:support@lendlove.com)
-🌐 **Web:** [lendlove.com](https://lendlove.com)
+📧 **Privacy:** [privacy@lendlovellc.com](mailto:privacy@lendlovellc.com)
+📧 **General Support:** [support@lendlovellc.com](mailto:support@lendlovellc.com)
+🌐 **Web:** [lendlovellc.com](https://lendlovellc.com)
 
 For EU/EEA / UK residents, our **EU Representative** is [TO BE INSERTED IF REQUIRED].
 

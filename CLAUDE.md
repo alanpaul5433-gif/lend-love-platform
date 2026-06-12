@@ -25,7 +25,7 @@ P2P lending apps are heavily scrutinized. Retrofitting compliance after rejectio
 ### Non-Negotiable Compliance Rules
 
 1. **Account deletion** — In-app + web-based (`/delete-account`). Required by both Apple and Google.
-2. **Privacy Policy + Terms of Service** — Hosted at `lendlove.com/privacy` + `lendlove.com/terms`. Linked from sign-up.
+2. **Privacy Policy + Terms of Service** — Hosted at `lendlovellc.com/privacy` + `lendlovellc.com/terms`. Linked from sign-up.
 3. **Age verification (18+)** — Checkbox + DOB validation on registration.
 4. **APR caps** — Backend enforces ≤36% (configurable per region) per Google's Personal Loan Policy.
 5. **Loan term minimums** — Reject loans requiring repayment in <60 days (Google policy).

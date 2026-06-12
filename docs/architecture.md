@@ -350,7 +350,7 @@ match /adminActions/{actionId} {
 
 ### 8.1 Authentication
 - Separate Firebase Auth project? **No** — same project, custom claim `role: admin`
-- Admin URL: `admin.lendlove.com`
+- Admin URL: `admin.lendlovellc.com`
 - Mandatory 2FA via TOTP (e.g., `firebase-admin` + `speakeasy`)
 
 ### 8.2 Data Fetching
@@ -405,8 +405,8 @@ EAS Build (production) → App Store Connect + Play Console submission
 
 ```
 PR → Vercel preview deployment
-main branch → Vercel staging (staging.admin.lendlove.com)
-git tag → Vercel production (admin.lendlove.com)
+main branch → Vercel staging (staging.admin.lendlovellc.com)
+git tag → Vercel production (admin.lendlovellc.com)
 ```
 
 ### 10.4 Backend Deployment

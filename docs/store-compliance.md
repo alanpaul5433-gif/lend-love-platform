@@ -30,11 +30,11 @@ Apple **will reject** any app that lets users create an account but does not let
   - Cancel any active subscriptions / auto-pay
   - Sign out from all devices
 - Must complete within 30 days
-- Provide a web-based deletion path too (`lendlove.com/delete-account`)
+- Provide a web-based deletion path too (`lendlovellc.com/delete-account`)
 
 ### 1.2 Privacy Policy (Guideline 5.1.1) — MANDATORY
 
-- Hosted URL (e.g., `lendlove.com/privacy`)
+- Hosted URL (e.g., `lendlovellc.com/privacy`)
 - Linked from:
   - App Store metadata
   - Sign-up screen (before account creation)
@@ -61,7 +61,7 @@ Declare every data type the app collects. For Lend Love:
 ### 1.4 Demo Account for Reviewers — MANDATORY for Lending Apps
 
 App Store Connect submission must include:
-- Demo email: `applereviewer@lendlove.com`
+- Demo email: `applereviewer@lendlovellc.com`
 - Password: provided in submission notes
 - Pre-loaded with verified KYC status + sample loans
 - Demo notes: "Demo accounts allow testing without real KYC. Use Continue as Guest Loaner / Borrower from the welcome screen."
@@ -337,9 +337,9 @@ If we add a premium feature later, evaluate carefully — physical lending servi
 
 ### DevOps Engineer
 
-- [ ] Privacy Policy hosted at `lendlove.com/privacy`
-- [ ] Terms of Service hosted at `lendlove.com/terms`
-- [ ] Account deletion web page at `lendlove.com/delete-account`
+- [ ] Privacy Policy hosted at `lendlovellc.com/privacy`
+- [ ] Terms of Service hosted at `lendlovellc.com/terms`
+- [ ] Account deletion web page at `lendlovellc.com/delete-account`
 - [ ] App Store Connect: full metadata, screenshots, demo account
 - [ ] Play Console: Data Safety form complete + accurate
 - [ ] Play Console: Personal Loan policy disclosures complete
@@ -417,11 +417,11 @@ After submission:
 
 | URL | Purpose |
 |---|---|
-| `lendlove.com/privacy` | Privacy Policy |
-| `lendlove.com/terms` | Terms of Service |
-| `lendlove.com/delete-account` | Web-based account deletion |
-| `lendlove.com/support` | Contact + help |
-| `lendlove.com/lending-disclosures` | TILA + APR + state-specific disclosures |
+| `lendlovellc.com/privacy` | Privacy Policy |
+| `lendlovellc.com/terms` | Terms of Service |
+| `lendlovellc.com/delete-account` | Web-based account deletion |
+| `lendlovellc.com/support` | Contact + help |
+| `lendlovellc.com/lending-disclosures` | TILA + APR + state-specific disclosures |
 
 All must be:
 - Publicly accessible (no login)

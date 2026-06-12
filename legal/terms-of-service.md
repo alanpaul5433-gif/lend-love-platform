@@ -20,7 +20,7 @@
 
 These Terms of Service ("**Terms**") form a binding agreement between you ("**you**" or "**User**") and Lend Love, Inc. ("**Lend Love**," "**we**," "**us**," or "**our**") governing your access to and use of our mobile applications, websites, and related services (collectively, the "**Service**").
 
-By creating an account, accessing, or using the Service, you confirm that you have read, understood, and agree to be bound by these Terms and our [Privacy Policy](https://lendlove.com/privacy). If you do not agree, do not use the Service.
+By creating an account, accessing, or using the Service, you confirm that you have read, understood, and agree to be bound by these Terms and our [Privacy Policy](https://lendlovellc.com/privacy). If you do not agree, do not use the Service.
 
 ---
 
@@ -46,7 +46,7 @@ You must register an account to use most features of the Service. When you regis
 
 - Provide accurate, complete, and current information
 - Maintain the security of your password and accept all risks of unauthorized access
-- Notify us immediately at [security@lendlove.com](mailto:security@lendlove.com) if you suspect unauthorized use of your account
+- Notify us immediately at [security@lendlovellc.com](mailto:security@lendlovellc.com) if you suspect unauthorized use of your account
 - Not share your account credentials with anyone
 
 You are responsible for all activity that occurs under your account, whether or not you authorized it.
@@ -209,7 +209,7 @@ We may, but are not obligated to, monitor, review, or remove any user content. W
 
 ### 8.4 Report Abuse
 
-You may report inappropriate content or conduct via the in-app **Report** button or by emailing [abuse@lendlove.com](mailto:abuse@lendlove.com). We investigate reports promptly and may take action including warning, suspension, or termination of accounts.
+You may report inappropriate content or conduct via the in-app **Report** button or by emailing [abuse@lendlovellc.com](mailto:abuse@lendlovellc.com). We investigate reports promptly and may take action including warning, suspension, or termination of accounts.
 
 ### 8.5 Blocking Other Users
 
@@ -242,7 +242,7 @@ Your use of those services is subject to their own terms and privacy policies. W
 
 ## 11. Privacy
 
-Our collection and use of personal information is governed by our [Privacy Policy](https://lendlove.com/privacy), which is incorporated by reference into these Terms.
+Our collection and use of personal information is governed by our [Privacy Policy](https://lendlovellc.com/privacy), which is incorporated by reference into these Terms.
 
 ---
 
@@ -250,7 +250,7 @@ Our collection and use of personal information is governed by our [Privacy Polic
 
 ### 12.1 By You
 
-You may terminate your account at any time by following the instructions in **Profile → Account Settings → Delete Account** within the app or by visiting [lendlove.com/delete-account](https://lendlove.com/delete-account).
+You may terminate your account at any time by following the instructions in **Profile → Account Settings → Delete Account** within the app or by visiting [lendlovellc.com/delete-account](https://lendlovellc.com/delete-account).
 
 ### 12.2 By Us
 
@@ -343,7 +343,7 @@ Your continued use of the Service after the effective date of an updated Terms m
 
 ## 19. Notice and Right to Cure
 
-Before initiating a dispute, you must first send written notice to [legal@lendlove.com](mailto:legal@lendlove.com) describing the claim. We will have **60 days** from receipt of the notice to attempt to resolve the matter informally.
+Before initiating a dispute, you must first send written notice to [legal@lendlovellc.com](mailto:legal@lendlovellc.com) describing the claim. We will have **60 days** from receipt of the notice to attempt to resolve the matter informally.
 
 ---
 
@@ -365,7 +365,7 @@ You may pursue claims in **small-claims court** if eligible. Either party may se
 
 ### 20.4 Right to Opt Out
 
-You may opt out of the arbitration agreement and class-action waiver by emailing [legal@lendlove.com](mailto:legal@lendlove.com) within **30 days of first accepting these Terms**. You must include your full name, account email, and a clear statement that you wish to opt out.
+You may opt out of the arbitration agreement and class-action waiver by emailing [legal@lendlovellc.com](mailto:legal@lendlovellc.com) within **30 days of first accepting these Terms**. You must include your full name, account email, and a clear statement that you wish to opt out.
 
 ### 20.5 Location and Costs
 
@@ -394,11 +394,11 @@ If you have questions about these Terms, contact us at:
 [CITY, STATE, ZIP CODE]
 [COUNTRY]
 
-📧 **Legal:** [legal@lendlove.com](mailto:legal@lendlove.com)
-📧 **Support:** [support@lendlove.com](mailto:support@lendlove.com)
-📧 **Privacy:** [privacy@lendlove.com](mailto:privacy@lendlove.com)
-📧 **Security:** [security@lendlove.com](mailto:security@lendlove.com)
-🌐 **Web:** [lendlove.com](https://lendlove.com)
+📧 **Legal:** [legal@lendlovellc.com](mailto:legal@lendlovellc.com)
+📧 **Support:** [support@lendlovellc.com](mailto:support@lendlovellc.com)
+📧 **Privacy:** [privacy@lendlovellc.com](mailto:privacy@lendlovellc.com)
+📧 **Security:** [security@lendlovellc.com](mailto:security@lendlovellc.com)
+🌐 **Web:** [lendlovellc.com](https://lendlovellc.com)
 
 ---
 

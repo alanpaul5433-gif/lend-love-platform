@@ -330,7 +330,7 @@ function buildPrivacyPolicy() {
     H2('1. Introduction'),
     P('Lend Love, Inc. ("Lend Love," "we," "us," or "our") operates the Lend Love™ peer-to-peer lending platform (the "Service"), including our mobile applications, websites, and related services. This Privacy Policy explains how we collect, use, share, and protect personal information when you use the Service.'),
     P('By using the Service, you agree to the practices described in this Privacy Policy. If you do not agree, please do not use the Service.'),
-    P('This Privacy Policy is incorporated by reference into our Terms of Service available at https://lendlove.com/terms.'),
+    P('This Privacy Policy is incorporated by reference into our Terms of Service available at https://lendlovellc.com/terms.'),
 
     H2('2. Information We Collect'),
     P('We collect information in three categories.'),
@@ -403,7 +403,7 @@ function buildPrivacyPolicy() {
     H3('10.1 All Users'),
     Bullet('**Access** — request a copy of the personal information we hold about you.'),
     Bullet('**Correction** — update inaccurate or incomplete information directly in your account settings.'),
-    Bullet('**Deletion** — delete your account from within the app (Profile → Account Settings → Delete Account) or via the web at https://lendlove.com/delete-account.'),
+    Bullet('**Deletion** — delete your account from within the app (Profile → Account Settings → Delete Account) or via the web at https://lendlovellc.com/delete-account.'),
     Bullet('**Withdraw consent** — where processing is based on consent, you may withdraw it at any time.'),
 
     H3('10.2 European Economic Area / UK Residents (GDPR)'),
@@ -411,13 +411,13 @@ function buildPrivacyPolicy() {
 
     H3('10.3 California Residents (CCPA / CPRA)'),
     P('You have the right to know what categories of personal information we collect and how it is used and shared, request deletion (subject to legal retention requirements), opt out of the sale or sharing of personal information (we do not sell personal information), limit the use of sensitive personal information, and exercise these rights without discrimination.'),
-    P('To exercise any of these rights, contact us at privacy@lendlove.com. We may need to verify your identity before fulfilling certain requests.'),
+    P('To exercise any of these rights, contact us at privacy@lendlovellc.com. We may need to verify your identity before fulfilling certain requests.'),
 
     H3('10.4 Account Deletion — What Gets Deleted vs. Retained'),
     P('When you delete your account, we **delete** your profile information (name, email, phone, address), KYC documents (after the 5-year AML retention period), profile photos and signatures, saved payment methods (tokens revoked with payment processor), push notification tokens, and chat message contents. We **retain (anonymized)** loan records (required by federal lending law for 7 years), signed agreements with your name redacted (required for audit), and transaction history (required for tax and regulatory reporting). This balance allows us to honor your right to deletion while complying with mandatory recordkeeping obligations.'),
 
     H2('11. Children\'s Privacy'),
-    P('The Service is not intended for individuals under the age of 18. We do not knowingly collect personal information from anyone under 18. If you believe we have collected information from someone under 18, please contact us at privacy@lendlove.com and we will delete it promptly.'),
+    P('The Service is not intended for individuals under the age of 18. We do not knowingly collect personal information from anyone under 18. If you believe we have collected information from someone under 18, please contact us at privacy@lendlovellc.com and we will delete it promptly.'),
 
     H2('12. Third-Party Links and Services'),
     P('Our Service may contain links to third-party websites, products, or services we do not control. Those services have their own privacy policies, and we are not responsible for their practices.'),
@@ -434,9 +434,9 @@ function buildPrivacyPolicy() {
     P('[STREET ADDRESS TO BE INSERTED]'),
     P('[CITY, STATE, ZIP CODE]'),
     P('[COUNTRY]'),
-    P('Privacy email: privacy@lendlove.com'),
-    P('General Support: support@lendlove.com'),
-    P('Web: https://lendlove.com'),
+    P('Privacy email: privacy@lendlovellc.com'),
+    P('General Support: support@lendlovellc.com'),
+    P('Web: https://lendlovellc.com'),
     P('For EU/EEA / UK residents, our EU Representative is [TO BE INSERTED IF REQUIRED].'),
 
     HR(),
@@ -473,7 +473,7 @@ function buildTermsOfService() {
 
     H2('1. Acceptance of Terms'),
     P('These Terms of Service ("Terms") form a binding agreement between you ("you" or "User") and Lend Love, Inc. ("Lend Love," "we," "us," or "our") governing your access to and use of our mobile applications, websites, and related services (collectively, the "Service").'),
-    P('By creating an account, accessing, or using the Service, you confirm that you have read, understood, and agree to be bound by these Terms and our Privacy Policy available at https://lendlove.com/privacy. If you do not agree, do not use the Service.'),
+    P('By creating an account, accessing, or using the Service, you confirm that you have read, understood, and agree to be bound by these Terms and our Privacy Policy available at https://lendlovellc.com/privacy. If you do not agree, do not use the Service.'),
 
     H2('2. Eligibility'),
     P('To use the Service, you must be at least 18 years of age (or the age of majority in your jurisdiction, whichever is greater); have the legal capacity to enter into binding contracts; reside in a jurisdiction where the Service is available; not be prohibited from using the Service under applicable law, including United States sanctions, anti-money-laundering, or counter-terrorism financing requirements; and provide accurate, current, and complete information about yourself.'),
@@ -481,7 +481,7 @@ function buildTermsOfService() {
 
     H2('3. Account Registration and Security'),
     H3('3.1 Account Creation'),
-    P('You must register an account to use most features of the Service. When you register, you agree to provide accurate, complete, and current information; maintain the security of your password and accept all risks of unauthorized access; notify us immediately at security@lendlove.com if you suspect unauthorized use of your account; and not share your account credentials with anyone.'),
+    P('You must register an account to use most features of the Service. When you register, you agree to provide accurate, complete, and current information; maintain the security of your password and accept all risks of unauthorized access; notify us immediately at security@lendlovellc.com if you suspect unauthorized use of your account; and not share your account credentials with anyone.'),
     P('You are responsible for all activity that occurs under your account, whether or not you authorized it.'),
 
     H3('3.2 Identity Verification (KYC) and AML'),
@@ -559,7 +559,7 @@ function buildTermsOfService() {
     P('We may, but are not obligated to, monitor, review, or remove any user content. We may remove content that violates these Terms, our community guidelines, or applicable law. We are not responsible for content submitted by other users.'),
 
     H3('8.4 Report Abuse'),
-    P('You may report inappropriate content or conduct via the in-app Report button or by emailing abuse@lendlove.com. We investigate reports promptly and may take action including warning, suspension, or termination of accounts.'),
+    P('You may report inappropriate content or conduct via the in-app Report button or by emailing abuse@lendlovellc.com. We investigate reports promptly and may take action including warning, suspension, or termination of accounts.'),
 
     H3('8.5 Blocking Other Users'),
     P('You may block another user from contacting you through the Service. Blocked users will be hidden from you and unable to message you.'),
@@ -571,11 +571,11 @@ function buildTermsOfService() {
     P('The Service integrates with third-party providers including ID Analyzer for identity verification, Paykings and NMI Gateway for payment processing, Stream Chat for messaging in production, Firebase (Google) for authentication, database, and notifications, SendGrid for email, and Twilio for SMS. Your use of those services is subject to their own terms and privacy policies. We are not responsible for any third-party service.'),
 
     H2('11. Privacy'),
-    P('Our collection and use of personal information is governed by our Privacy Policy at https://lendlove.com/privacy, which is incorporated by reference into these Terms.'),
+    P('Our collection and use of personal information is governed by our Privacy Policy at https://lendlovellc.com/privacy, which is incorporated by reference into these Terms.'),
 
     H2('12. Account Suspension and Termination'),
     H3('12.1 By You'),
-    P('You may terminate your account at any time by following the instructions in Profile → Account Settings → Delete Account within the app or by visiting https://lendlove.com/delete-account.'),
+    P('You may terminate your account at any time by following the instructions in Profile → Account Settings → Delete Account within the app or by visiting https://lendlovellc.com/delete-account.'),
 
     H3('12.2 By Us'),
     P('We may suspend or terminate your account at any time, with or without notice, if we believe you have violated these Terms, posed a risk of harm to others or the platform, or for any other reason in our reasonable discretion.'),
@@ -605,7 +605,7 @@ function buildTermsOfService() {
     P('We may modify these Terms at any time. We will update the "Last Updated" date at the top of this document, provide notice through the app or by email if changes are material, and where required by law, obtain your consent or give you the opportunity to delete your account. Your continued use of the Service after the effective date of an updated Terms means you accept the changes.'),
 
     H2('19. Notice and Right to Cure'),
-    P('Before initiating a dispute, you must first send written notice to legal@lendlove.com describing the claim. We will have 60 days from receipt of the notice to attempt to resolve the matter informally.'),
+    P('Before initiating a dispute, you must first send written notice to legal@lendlovellc.com describing the claim. We will have 60 days from receipt of the notice to attempt to resolve the matter informally.'),
 
     H2('20. Mandatory Arbitration and Class Action Waiver'),
     P('PLEASE READ CAREFULLY. THIS SECTION AFFECTS YOUR LEGAL RIGHTS.'),
@@ -619,7 +619,7 @@ function buildTermsOfService() {
     P('You may pursue claims in small-claims court if eligible. Either party may seek injunctive relief in court to protect intellectual-property rights.'),
 
     H3('20.4 Right to Opt Out'),
-    P('You may opt out of the arbitration agreement and class-action waiver by emailing legal@lendlove.com within 30 days of first accepting these Terms. You must include your full name, account email, and a clear statement that you wish to opt out.'),
+    P('You may opt out of the arbitration agreement and class-action waiver by emailing legal@lendlovellc.com within 30 days of first accepting these Terms. You must include your full name, account email, and a clear statement that you wish to opt out.'),
 
     H3('20.5 Location and Costs'),
     P('Arbitration will be conducted in [CITY, STATE TO BE INSERTED], or by remote means if the AAA Consumer Arbitration Rules so allow. The AAA Consumer Arbitration Rules govern the allocation of fees.'),
@@ -639,11 +639,11 @@ function buildTermsOfService() {
     P('[STREET ADDRESS TO BE INSERTED]'),
     P('[CITY, STATE, ZIP CODE]'),
     P('[COUNTRY]'),
-    P('Legal: legal@lendlove.com'),
-    P('Support: support@lendlove.com'),
-    P('Privacy: privacy@lendlove.com'),
-    P('Security: security@lendlove.com'),
-    P('Web: https://lendlove.com'),
+    P('Legal: legal@lendlovellc.com'),
+    P('Support: support@lendlovellc.com'),
+    P('Privacy: privacy@lendlovellc.com'),
+    P('Security: security@lendlovellc.com'),
+    P('Web: https://lendlovellc.com'),
 
     HR(),
     P('© [YEAR] Lend Love, Inc. All rights reserved. Lend Love™ is a trademark of Lend Love, Inc.'),

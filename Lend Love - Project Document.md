@@ -603,7 +603,7 @@ The app is engineered from Day 1 to comply with both **Apple App Store** and **G
 | Requirement | How We Address It |
 |---|---|
 | **In-app account deletion** | Two-step deletion in Account Settings — required by both stores (Apple G5.1.1(v), Google 2024 policy) |
-| **Web-based account deletion** | Hosted at `lendlove.com/delete-account` — Google requirement |
+| **Web-based account deletion** | Hosted at `lendlovellc.com/delete-account` — Google requirement |
 | **Privacy Policy + Terms of Service** | Hosted, linked from sign-up + Settings |
 | **Age verification (18+)** | Mandatory checkbox + DOB validation on registration |
 | **APR cap enforcement (≤36%)** | Backend rejects loans exceeding regional cap per Google's Personal Loan Policy |
@@ -711,7 +711,7 @@ Specific support contracts to be negotiated separately.
 | 4 | Apply for ID Analyzer account | PM |
 | 5 | Engage fintech lawyer for compliance review | Client |
 | 6 | Apple Developer + Google Play accounts created | Client |
-| 7 | Domain name registration (lendlove.com or similar) | Client |
+| 7 | Domain name registration (lendlovellc.com or similar) | Client |
 | 8 | Kickoff meeting scheduled | PM |
 
 ### What We Need from the Client

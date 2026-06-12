@@ -181,7 +181,7 @@ Stream Chat stores all messages — **never duplicate to Firestore**. Only store
 
 ### Setup
 
-- Verified sender domain: `mail.lendlove.com`
+- Verified sender domain: `mail.lendlovellc.com`
 - DKIM + SPF + DMARC configured
 - Dynamic templates for all transactional emails
 
@@ -262,7 +262,7 @@ Every third-party integration you add affects **App Store Privacy Nutrition Labe
 ### When Adding a New Integration
 
 1. ✅ Identify what data leaves the platform
-2. ✅ Update Privacy Policy at `lendlove.com/privacy` (coordinate with PM)
+2. ✅ Update Privacy Policy at `lendlovellc.com/privacy` (coordinate with PM)
 3. ✅ Update Apple Privacy Nutrition Labels (coordinate with `devops-engineer`)
 4. ✅ Update Google Play Data Safety Form
 5. ✅ Confirm provider has GDPR + CCPA compliance certifications
