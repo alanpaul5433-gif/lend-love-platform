@@ -34,7 +34,7 @@ We collect information in three categories:
 - **Usage data**: screens visited, features used, taps, scroll behavior, session duration, crash reports
 - **Approximate location**: derived from IP address (not precise GPS unless you explicitly grant location permission)
 - **Network data**: IP address, browser type (web), language preferences, time zone
-- **Cookies and similar technologies**: see Section 9 below
+- **Cookies and similar technologies**: see Section 8 below
 
 ### 2.3 Information from Third Parties
 
@@ -119,19 +119,7 @@ If we are involved in a merger, acquisition, financing, reorganization, bankrupt
 
 ---
 
-## 6. International Data Transfers
-
-Lend Love is based in [JURISDICTION TO BE INSERTED]. Your information may be processed in countries where our service providers operate, including the United States, the European Economic Area, and other jurisdictions.
-
-For transfers from the EU/UK, we rely on:
-
-- **Standard Contractual Clauses** approved by the European Commission
-- **Adequacy decisions** where applicable
-- **Your explicit consent** in limited circumstances
-
----
-
-## 7. Data Retention
+## 6. Data Retention
 
 We retain personal information only as long as needed to provide the Service or as required by law:
 
@@ -151,7 +139,7 @@ After the retention period, we securely delete or anonymize the information.
 
 ---
 
-## 8. Security
+## 7. Security
 
 We implement reasonable administrative, technical, and physical safeguards to protect your information:
 
@@ -167,7 +155,7 @@ No method of transmission or storage is 100% secure. While we strive to protect 
 
 ---
 
-## 9. Cookies and Tracking Technologies
+## 8. Cookies and Tracking Technologies
 
 Our Service uses cookies and similar technologies (in browsers) and SDK identifiers (in mobile apps) to:
 
@@ -180,24 +168,24 @@ We do **not** use cookies for third-party advertising or behavioral profiling ac
 
 ---
 
-## 10. Your Rights and Choices
+## 9. Your Rights and Choices
 
 Depending on where you live, you may have the following rights:
 
-### 10.1 All Users
+### 9.1 All Users
 - **Access**: request a copy of the personal information we hold about you
 - **Correction**: update inaccurate or incomplete information directly in your account settings
 - **Deletion**: delete your account from within the app (Profile → Account Settings → Delete Account) or via the web at [lendlovellc.com/delete-account](https://lendlovellc.com/delete-account)
 - **Withdraw consent**: where processing is based on consent, you may withdraw it at any time
 
-### 10.2 European Economic Area / UK Residents (GDPR)
+### 9.2 European Economic Area / UK Residents (GDPR)
 You additionally have the right to:
 - **Portability**: receive your data in a machine-readable format
 - **Restriction**: limit how we process your data
 - **Object**: object to processing based on legitimate interests
 - **Lodge a complaint** with your local data-protection authority
 
-### 10.3 California Residents (CCPA / CPRA)
+### 9.3 California Residents (CCPA / CPRA)
 You have the right to:
 - Know what categories of personal information we collect and how it is used and shared
 - Request deletion (subject to legal retention requirements)
@@ -205,9 +193,9 @@ You have the right to:
 - Limit the use of sensitive personal information
 - Non-discrimination for exercising your rights
 
-To exercise any of these rights, contact us at [privacy@lendlovellc.com](mailto:privacy@lendlovellc.com). We may need to verify your identity before fulfilling certain requests.
+To exercise any of these rights, contact us at [support@lendlovellc.com](mailto:support@lendlovellc.com). We may need to verify your identity before fulfilling certain requests.
 
-### 10.4 Account Deletion — What Gets Deleted vs. Retained
+### 9.4 Account Deletion — What Gets Deleted vs. Retained
 
 When you delete your account, we:
 
@@ -228,25 +216,25 @@ This balance allows us to honor your right to deletion while complying with mand
 
 ---
 
-## 11. Children's Privacy
+## 10. Children's Privacy
 
-The Service is **not** intended for individuals under the age of 18. We do not knowingly collect personal information from anyone under 18. If you believe we have collected information from someone under 18, please contact us at [privacy@lendlovellc.com](mailto:privacy@lendlovellc.com) and we will delete it promptly.
+The Service is **not** intended for individuals under the age of 18. We do not knowingly collect personal information from anyone under 18. If you believe we have collected information from someone under 18, please contact us at [support@lendlovellc.com](mailto:support@lendlovellc.com) and we will delete it promptly.
 
 ---
 
-## 12. Third-Party Links and Services
+## 11. Third-Party Links and Services
 
 Our Service may contain links to third-party websites, products, or services we do not control (for example, the websites of our payment or identity-verification providers). Those services have their own privacy policies, and we are not responsible for their practices.
 
 ---
 
-## 13. Notice of Financial-Information Practices (Gramm-Leach-Bliley Act)
+## 12. Notice of Financial-Information Practices (Gramm-Leach-Bliley Act)
 
 As a financial-services platform, we are subject to the Gramm-Leach-Bliley Act ("**GLBA**"). We collect and share nonpublic personal information only as described in this Privacy Policy and only as permitted by GLBA. You have the right to opt out of certain sharing — though most of our sharing falls under permitted exceptions for processing transactions, regulatory compliance, and security.
 
 ---
 
-## 14. Updates to This Privacy Policy
+## 13. Updates to This Privacy Policy
 
 We may update this Privacy Policy from time to time. When we make material changes, we will:
 
@@ -258,20 +246,14 @@ Your continued use of the Service after the effective date of an updated Privacy
 
 ---
 
-## 15. Contact Us
+## 14. Contact Us
 
 If you have questions about this Privacy Policy or our data practices, please contact our Data Protection Officer:
 
 **Lend Love, Inc.**
-[STREET ADDRESS TO BE INSERTED]
-[CITY, STATE, ZIP CODE]
-[COUNTRY]
 
-📧 **Privacy:** [privacy@lendlovellc.com](mailto:privacy@lendlovellc.com)
-📧 **General Support:** [support@lendlovellc.com](mailto:support@lendlovellc.com)
+📧 **Support:** [support@lendlovellc.com](mailto:support@lendlovellc.com)
 🌐 **Web:** [lendlovellc.com](https://lendlovellc.com)
-
-For EU/EEA / UK residents, our **EU Representative** is [TO BE INSERTED IF REQUIRED].
 
 ---
 

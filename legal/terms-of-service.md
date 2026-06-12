@@ -46,7 +46,7 @@ You must register an account to use most features of the Service. When you regis
 
 - Provide accurate, complete, and current information
 - Maintain the security of your password and accept all risks of unauthorized access
-- Notify us immediately at [security@lendlovellc.com](mailto:security@lendlovellc.com) if you suspect unauthorized use of your account
+- Notify us immediately at [support@lendlovellc.com](mailto:support@lendlovellc.com) if you suspect unauthorized use of your account
 - Not share your account credentials with anyone
 
 You are responsible for all activity that occurs under your account, whether or not you authorized it.
@@ -66,10 +66,6 @@ We may **decline, suspend, or terminate** your account if:
 - You appear on a sanctioned-persons list
 - Your activity is consistent with money laundering, fraud, or other prohibited conduct
 - You provide false or misleading information
-
-### 3.3 Demo Accounts
-
-The Service includes "Guest" demo accounts for evaluation purposes only. Demo accounts contain pre-populated sample data and are not eligible to send or receive real money. Loan agreements signed within a demo account are not legally binding.
 
 ---
 
@@ -209,7 +205,7 @@ We may, but are not obligated to, monitor, review, or remove any user content. W
 
 ### 8.4 Report Abuse
 
-You may report inappropriate content or conduct via the in-app **Report** button or by emailing [abuse@lendlovellc.com](mailto:abuse@lendlovellc.com). We investigate reports promptly and may take action including warning, suspension, or termination of accounts.
+You may report inappropriate content or conduct via the in-app **Report** button or by emailing [support@lendlovellc.com](mailto:support@lendlovellc.com). We investigate reports promptly and may take action including warning, suspension, or termination of accounts.
 
 ### 8.5 Blocking Other Users
 
@@ -312,7 +308,7 @@ You agree to **indemnify, defend, and hold harmless** Lend Love and its officers
 
 ## 16. Governing Law
 
-These Terms are governed by the laws of the **State of [STATE TO BE INSERTED, e.g., Delaware]**, without regard to its conflict-of-laws principles. The United Nations Convention on Contracts for the International Sale of Goods does not apply.
+These Terms are governed by the laws of the **State of New York**, without regard to its conflict-of-laws principles. The United Nations Convention on Contracts for the International Sale of Goods does not apply.
 
 ---
 
@@ -369,7 +365,7 @@ You may opt out of the arbitration agreement and class-action waiver by emailing
 
 ### 20.5 Location and Costs
 
-Arbitration will be conducted in [CITY, STATE TO BE INSERTED], or by remote means if the AAA Consumer Arbitration Rules so allow. The AAA Consumer Arbitration Rules govern the allocation of fees.
+Arbitration will be conducted in New York County, New York, or by remote means if the AAA Consumer Arbitration Rules so allow. The AAA Consumer Arbitration Rules govern the allocation of fees.
 
 ---
 
@@ -390,14 +386,9 @@ Arbitration will be conducted in [CITY, STATE TO BE INSERTED], or by remote mean
 If you have questions about these Terms, contact us at:
 
 **Lend Love, Inc.**
-[STREET ADDRESS TO BE INSERTED]
-[CITY, STATE, ZIP CODE]
-[COUNTRY]
 
 📧 **Legal:** [legal@lendlovellc.com](mailto:legal@lendlovellc.com)
 📧 **Support:** [support@lendlovellc.com](mailto:support@lendlovellc.com)
-📧 **Privacy:** [privacy@lendlovellc.com](mailto:privacy@lendlovellc.com)
-📧 **Security:** [security@lendlovellc.com](mailto:security@lendlovellc.com)
 🌐 **Web:** [lendlovellc.com](https://lendlovellc.com)
 
 ---

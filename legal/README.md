@@ -47,14 +47,9 @@ Budget approximately **$1,500–$3,000** for a proper attorney review. Try finte
 Both documents contain placeholders in `[BRACKETS]` that must be replaced:
 
 - `[DATE TO BE INSERTED]` — effective and last-updated dates
-- `[STREET ADDRESS TO BE INSERTED]` — legal business address
-- `[CITY, STATE, ZIP CODE]` — same
-- `[COUNTRY]` — country of incorporation
-- `[STATE TO BE INSERTED, e.g., Delaware]` — governing-law state
-- `[CITY, STATE TO BE INSERTED]` — arbitration venue
 - `[YEAR]` — copyright year
-- `[JURISDICTION TO BE INSERTED]` — primary place of business
-- `[TO BE INSERTED IF REQUIRED]` — EU representative (if applicable)
+
+Governing law is set to **New York**. Arbitration venue is set to **New York County, New York**. Update if you choose a different jurisdiction.
 
 ---
 
