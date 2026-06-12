@@ -58,3 +58,6 @@ coverage/
 # Backup
 *.bak
 *.orig
+
+# Microsoft Office lock files
+~$*
